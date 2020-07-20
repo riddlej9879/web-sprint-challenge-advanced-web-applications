@@ -116,6 +116,7 @@ const ColorList = ({ props, colors, updateColors }) => {
           </label>
           <div className="button-row">
             <button type="submit">save</button>
+            {/* Added updateColors([...colors]) to onClick to see if the page would update */}
             <button onClick={() => setEditing(false)}>cancel</button>
           </div>
         </form>
